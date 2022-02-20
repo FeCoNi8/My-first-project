@@ -62,7 +62,7 @@ def main():
 
     initials = input('Enter several initials: >>>').split(',')
     for initial in initials:
-        valley_data = parse_valley(initial,json_data)
+        valley_data = parse_valley(initial.strip(),json_data)
         print(print_valley(valley_data))
         print("")
 
